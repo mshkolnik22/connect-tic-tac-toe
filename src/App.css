@@ -66,6 +66,94 @@ body {
   text-shadow: 0 0 15px #3c98fa;
 }
 
+.squareStyle25 {
+  width:50px;
+  height:50px;
+  background-Color: #d2e4f7;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-Size: 30px;
+  color: black;
+  transition: .5s;
+}
+
+.squareStyle25:before {
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+ 
+  border-radius:50%;
+  background: #3c98fa;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.squareStyle25:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.squareStyle25:hover:before {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #d300c1;
+  filter: blur(3px);
+}
+
+.squareStyle25:hover {
+  color: #0067d5;
+  box-shadow: 0 0 15px #3c98fa;
+  text-shadow: 0 0 15px #3c98fa;
+}
+
+
+.squareStyle400 {
+  width:20px;
+  height:20px;
+  background-Color: #d2e4f7;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-Size: 10px;
+  color: black;
+  transition: .5s;
+}
+
+.squareStyle400:before {
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  border-radius:50%;
+  background: #3c98fa;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.squareStyle400:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.squareStyle400:hover:before {
+  transform: scale(1.2);
+  box-shadow: 0 0 5px #d300c1;
+  filter: blur(3px);
+}
+
+.squareStyle400:hover {
+  color: #0067d5;
+  box-shadow: 0 0 5px #3c98fa;
+  text-shadow: 0 0 5px #3c98fa;
+}
+
 .boardStyle {
   display: flex;
   background-color: #fac2ed;
@@ -76,6 +164,30 @@ body {
   justify-content: space-around;
   flex-direction: column;
   border: 3px violet solid;
+}
+
+.boardStyle25 {
+  display: flex;
+  background-color: #c2ddfa;
+  background-image: linear-gradient(90deg, #8282ee 0%, #b0a9f7 35%, #e5e4f7 100%);
+  width: 608px;
+  height: 508px;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 3px rgb(144, 130, 238) solid;
+}
+
+.boardStyle400 {
+  display: flex;
+  background-color: #c2faed;
+  background-image: linear-gradient(90deg, #ed42f6 0%, #fefefe 35%, #93e8f7 100%);
+  width: 708px;
+  height: 708px;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 3px rgb(34, 0, 255) solid;
 }
 
 .containerStyle {
@@ -116,10 +228,32 @@ body {
   background-color: black;
   border: 3px solid #dd10e8;
   width:120px;
+  height: 50px;
   border-radius: 25px;
   left:50%;
   animation: border-flicker 4s linear infinite;
 }
+
+.noflicker {
+  text-align:center;
+  margin: 15px;
+  background-color: black;
+  border: 3px solid #dd10e8;
+  width:140px;
+  height: 50px;
+  border-radius: 25px;
+  left:50%;
+}
+
+.pink h1 {
+    margin: 10px auto;
+    text-align: center;
+    color: #bd00bd;
+    font-size: 3em;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-wrap: break-word;
+  }
 
 h1 {
   margin: 10px auto;
@@ -131,12 +265,12 @@ h1 {
 }
 
 h1:hover {
-  text-shadow: 0 1px 0 blue, 0 2px 0 blue,
-      0 3px 0 blueviolet, 0 4px 0 blueviolet,
+  text-shadow: 0 1px 0 blueviolet, 0 2px 0 blueviolet,
+      0 3px 0 #009dff, 0 4px 0 #009dff,
       0 5px 0 violet, 0 6px 0 violet,
       0 7px 0 #fff, 0 8px 0 #fff,
       0 9px 0 #ccc, 0 10px 0 #ccc,
-      0 11px 0 rgb(155, 119, 155), 0 12px 0 violet,
+      0 11px 0 #9b779b, 0 12px 0 #6c3b6c,
       0 20px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -149,6 +283,14 @@ h2 {
   animation: text-flicker 2s linear infinite;
 }
 
+h3 {
+  color:#00a6ff;
+  padding: 30 10px 5px 5px;
+  font-family: 'Raleway', sans-serif;
+  font-size:10px;
+  letter-spacing:10px;
+ 
+}
 #offset {
   animation: letter-flicker 2s linear infinite;
 }
@@ -287,5 +429,200 @@ box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
   87% {
     opacity:1;
     text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+}
+
+.sign {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  background-image: radial-gradient(
+    ellipse 50% 35% at 50% 50%,
+    #6b1839,
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 50%;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 6em;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
   }
 }
