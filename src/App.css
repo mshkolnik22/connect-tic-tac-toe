@@ -1,0 +1,278 @@
+.App {
+  text-align: center;
+  height: 5000px;
+}
+
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.rowStyle {
+  display: flex;
+}
+
+.squareStyle {
+  width:90px;
+  height:90px;
+  background-Color: #d2e4f7;
+  margin: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-Size: 40px;
+  color: black;
+  transition: .5s;
+}
+
+.squareStyle:before {
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+ 
+  border-radius:50%;
+  background: #3c98fa;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.squareStyle:hover:before {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #d300c1;
+  filter: blur(3px);
+}
+
+.squareStyle:hover {
+  color: #3c98fa;
+  box-shadow: 0 0 15px #3c98fa;
+  text-shadow: 0 0 15px #3c98fa;
+}
+
+.boardStyle {
+  display: flex;
+  background-color: #fac2ed;
+  width: 608px;
+  height: 508px;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 3px violet solid;
+}
+
+.containerStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instructionsStyle {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-Size: 16px;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
+  background-color:black;
+  background-image: url('./xo.jpg');
+  background-size: cover;
+  width: 50%;
+}
+
+.vertical {
+  display: flex;
+}
+
+.flicker {
+  text-align:center;
+  margin: 15px;
+  background-color: black;
+  border: 3px solid #dd10e8;
+  width:120px;
+  border-radius: 25px;
+  left:50%;
+  animation: border-flicker 4s linear infinite;
+}
+
+h1 {
+  margin: 10px auto;
+  text-align: center;
+  color: #31b8f7;
+  font-size: 3em;
+  transition: 0.5s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1:hover {
+  text-shadow: 0 1px 0 blue, 0 2px 0 blue,
+      0 3px 0 blueviolet, 0 4px 0 blueviolet,
+      0 5px 0 violet, 0 6px 0 violet,
+      0 7px 0 #fff, 0 8px 0 #fff,
+      0 9px 0 #ccc, 0 10px 0 #ccc,
+      0 11px 0 violet, 0 12px 0 violet,
+      0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  color:#00a6ff;
+  padding: 30 10px 5px 5px;
+  font-family: 'Raleway', sans-serif;
+  font-size:14px;
+  letter-spacing:10px;
+  animation: text-flicker 2s linear infinite;
+}
+
+#offset {
+  animation: letter-flicker 2s linear infinite;
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  
+  2% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  8% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  9% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  12% {
+    opacity:0.1;
+    text-shadow: 0px 0px rgba(242, 22, 22, 1);
+  }
+  20% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  25% {
+    opacity:0.3;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  30% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  
+  70% {
+    opacity:0.7;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  
+  72% {
+    opacity:0.2;
+    text-shadow:0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  
+  77% {
+    opacity:.9;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+  100% {
+    opacity:.9;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1)
+  }
+}
+
+@keyframes border-flicker {
+  0% {
+    opacity:0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  2% {
+    opacity:1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  4% {
+    opacity:0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  
+  8% {
+    opacity:1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  70% {
+    opacity:0.7;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+  100% {
+    opacity:1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+-moz-box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+box-shadow: 0px 0px 78px 4px rgba(16,134,232,0.73);
+  }
+}
+
+@keyframes letter-flicker {
+  0% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  2% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  4% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  
+  
+  19% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  21% {
+    opacity:0.1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  23% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  
+  80% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  83% {
+    opacity:0.4;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+  87% {
+    opacity:1;
+    text-shadow: 0px 0px 29px rgba(242, 22, 22, 1);
+  }
+}
