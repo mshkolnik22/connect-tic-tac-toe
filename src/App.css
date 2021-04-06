@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  height: 5000px;
+
 }
 
 body {
@@ -48,6 +48,12 @@ body {
   z-index: -1;
 }
 
+.squareStyle:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
 .squareStyle:hover:before {
   transform: scale(1.2);
   box-shadow: 0 0 15px #d300c1;
@@ -55,7 +61,7 @@ body {
 }
 
 .squareStyle:hover {
-  color: #3c98fa;
+  color: #0067d5;
   box-shadow: 0 0 15px #3c98fa;
   text-shadow: 0 0 15px #3c98fa;
 }
@@ -63,6 +69,7 @@ body {
 .boardStyle {
   display: flex;
   background-color: #fac2ed;
+  background-image: linear-gradient(90deg, violet 0%, #f7a9e6 35%, #f7e4f3 100%);
   width: 608px;
   height: 508px;
   align-items: center;
@@ -88,9 +95,15 @@ body {
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 body {
   background-color:black;
-  background-image: url('./xo.jpg');
-  background-size: cover;
-  width: 50%;
+
+  background-image: linear-gradient(rgba(0, 136, 255, 0.461), rgba(113, 0, 113, 0.769)), url('./xo.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(68, 0, 255, 0.605)), to(rgba(99, 0, 96, 0.68))), url('./xo.jpg');
+  background-image: -moz-linear-gradient(top, rgba(34, 0, 255, 0.269), rgba(128, 0, 117, 0.269)), url('./xo.jpg');
+
+  height: 800px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .vertical {
@@ -111,7 +124,7 @@ body {
 h1 {
   margin: 10px auto;
   text-align: center;
-  color: #31b8f7;
+  color: rgb(0, 145, 255);
   font-size: 3em;
   transition: 0.5s;
   font-family: Arial, Helvetica, sans-serif;
@@ -123,7 +136,7 @@ h1:hover {
       0 5px 0 violet, 0 6px 0 violet,
       0 7px 0 #fff, 0 8px 0 #fff,
       0 9px 0 #ccc, 0 10px 0 #ccc,
-      0 11px 0 violet, 0 12px 0 violet,
+      0 11px 0 rgb(155, 119, 155), 0 12px 0 violet,
       0 20px 30px rgba(0, 0, 0, 0.5);
 }
 
