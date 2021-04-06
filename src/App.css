@@ -97,12 +97,12 @@ body {
   background-color:black;
 
   background-image: linear-gradient(rgba(0, 136, 255, 0.461), rgba(113, 0, 113, 0.769)), url('./xo.jpg');
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(68, 0, 255, 0.605)), to(rgba(99, 0, 96, 0.68))), url('./xo.jpg');
-  background-image: -moz-linear-gradient(top, rgba(34, 0, 255, 0.269), rgba(128, 0, 117, 0.269)), url('./xo.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 136, 255, 0.461)), to(rgba(113, 0, 113, 0.769))), url('./xo.jpg');
+  background-image: -moz-linear-gradient(top, rgba(0, 136, 255, 0.461), rgba(113, 0, 113, 0.769)), url('./xo.jpg');
 
-  height: 800px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  height: 900px; /* You must set a specified height */
+  background-position: bottom; /* Center the image */
+  background-repeat: no-repeat 50% 0; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
 
