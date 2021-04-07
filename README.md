@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Create-Tic-Tac-Toe! This game is made with React and is bootstrapped with [Create React App](https://github.com/facebook/create-react-app). The Medium and Hard level are modeled after Gomoku (Rentzu) and are 5-in-a-row tic-tac-toe. 
 
 ## Available Scripts
 

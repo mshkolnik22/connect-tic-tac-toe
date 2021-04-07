@@ -96,7 +96,7 @@ const Game25 = () => {
              <h1>Connect 5 to win!</h1>
         </div>
           <div className="instructionsStyle">Next player: {findNextPlayer(input)}</div>
-          <div className="instructionsStyle">Winner: {winner} </div>
+          <div className="instructionsStyle"><h4>Winner: {winner} </h4></div>
           
             <div className="board-row rowStyle">
               {drawSq(0)}

@@ -545,7 +545,7 @@ const Game400 = () => {
                   <span class="fast-flicker">EASY</span>
                 </button>
             </Link>
-            <Link to="/5by5">
+            <Link to="/15by15">
                 <button className="noflicker">
                   <span class="fast-flicker">MEDIUM</span>
                 </button>

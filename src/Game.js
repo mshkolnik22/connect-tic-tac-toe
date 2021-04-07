@@ -93,10 +93,12 @@ const Game = () => {
         <div className="boardStyle">
         <div className="padded">
              <h1>Welcome to Tic-Tac-Toe!</h1>
-             <h5>Try out our MEDIUM and HARD levels! A traditional Japanese board game for 2 players that is similar to but more complex than tic-tac-toe is called Gomoku. During the game, players take turns placing X's and O's (or black and white pieces) on the board with the goal of creating an unbroken line of 5 pieces in any direction. A traditional Gomoku board has a 15x15 grid of lines, but is sometimes played on a Go board, which has a 19x19 grid.</h5>
+             <h5>Try out our MEDIUM and HARD levels! A traditional Japanese board game for 2 players that is similar to but more complex than tic-tac-toe is called Gomoku. During the game, players take turns placing X's and O's (or black and white pieces) on the board with the goal of creating an unbroken line of 5 pieces in any direction. </h5>
+               
+            <h5>A traditional Gomoku board has a 15x15 grid of lines, but is sometimes played on a Go board, which has a 19x19 grid.</h5>
         </div>
           <div className="instructionsStyle">Next player: {findNextPlayer(input)}</div>
-          <div className="instructionsStyle">Winner: {winner} </div>
+          <div className="instructionsStyle"><h4>Winner: {winner} </h4></div>
           
             <div className="board-row rowStyle">
               {drawSq(0)}
@@ -115,7 +117,7 @@ const Game = () => {
             </div>
             <div>
              <button className="flicker" onClick={() => handleReset()}><h2>R<span id="offset">E</span>SET</h2></button>
-             <Link to="/5by5">
+             <Link to="/15by15">
                 <button className="noflicker">
                   <span class="fast-flicker">MEDIUM</span>
                 </button>

@@ -110,6 +110,49 @@ body {
   text-shadow: 0 0 15px #3c98fa;
 }
 
+.squareStyle225 {
+  width:24px;
+  height:24px;
+  background-Color: #d2e4f7;
+  margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-Size: 22px;
+  color: black;
+  transition: .5s;
+}
+
+.squareStyle225:before {
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+ 
+  border-radius:50%;
+  background: #3c98fa;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.squareStyle225:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.squareStyle225:hover:before {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #d300c1;
+  filter: blur(3px);
+}
+
+.squareStyle225:hover {
+  color: #0067d5;
+  box-shadow: 0 0 15px #3c98fa;
+  text-shadow: 0 0 15px #3c98fa;
+}
 button {
   font-size: 100%;
   font-family: inherit;
@@ -190,6 +233,19 @@ button {
   border: 3px rgb(144, 130, 238) solid;
 }
 
+.boardStyle225 {
+  display: flex;
+  background-color: #c2faed;
+  margin-left: 10px;
+  background-image: linear-gradient(90deg, #ed42f6 0%, #2f00ff 35%, #93e8f7 100%);
+  width: 708px;
+  height: 716px;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 3px rgb(34, 0, 255) solid;
+}
+
 .boardStyle400 {
   display: flex;
   background-color: #c2faed;
@@ -268,6 +324,16 @@ body {
     overflow-wrap: break-word;
   }
 
+  .white h1 {
+    margin: 10px auto;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-wrap: break-word;
+  }
+
 h1 {
   margin: 10px auto;
   text-align: center;
@@ -310,7 +376,7 @@ h4 {
   margin: 10px;
   color:#ff00ee;
   font-family: 'Raleway', sans-serif;
-  font-size:18px;
+  font-size: 1.2em;
   letter-spacing:10px;
 }
 
