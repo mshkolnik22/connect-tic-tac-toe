@@ -153,6 +153,7 @@ body {
   box-shadow: 0 0 15px #3c98fa;
   text-shadow: 0 0 15px #3c98fa;
 }
+
 button {
   font-size: 100%;
   font-family: inherit;
@@ -237,26 +238,26 @@ button {
   display: flex;
   background-color: #c2faed;
   margin-left: 10px;
-  background-image: linear-gradient(90deg, #ed42f6 0%, #2f00ff 35%, #93e8f7 100%);
+  background-image: linear-gradient(90deg, #caf5ff 0%, #7caffc 35%, #e39bff 100%);
   width: 708px;
   height: 716px;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  border: 3px rgb(34, 0, 255) solid;
+  border: 3px rgb(145, 0, 116) solid;
 }
 
 .boardStyle400 {
   display: flex;
   background-color: #c2faed;
   margin-left: 10px;
-  background-image: linear-gradient(90deg, #ed42f6 0%, #fefefe 35%, #93e8f7 100%);
+  background-image: linear-gradient(90deg, #67a3fc 0%, #c2bdf9 35%, #f8b4fe 100%);
   width: 708px;
   height: 716px;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  border: 3px rgb(34, 0, 255) solid;
+  border: 3px rgb(191, 0, 255) solid;
 }
 
 .containerStyle {
@@ -375,6 +376,14 @@ h3 {
 h4 {
   margin: 10px;
   color:#ff00ee;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2em;
+  letter-spacing:10px;
+}
+
+.purple h4 {
+  margin: 10px;
+  color:#9400fe;
   font-family: 'Raleway', sans-serif;
   font-size: 1.2em;
   letter-spacing:10px;

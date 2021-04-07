@@ -96,8 +96,8 @@ const Game225 = () => {
              <h1>Tic-Tac-Toe 5 In A Row!</h1>
              <h1>15 by 15 - MEDIUM LEVEL</h1>
         </div>
-          <div className="instructionsStyle">Next player: {findNextPlayer(input)}</div>
-          <div className="instructionsStyle"><h4>Winner: {winner} </h4></div>
+          <div className="instructionsStyle">6 In A Row Loses. Next player: {findNextPlayer(input)}</div>
+          <div className="instructionsStyle purple"><h4>The Winner is: {winner} </h4></div>
           
             <div className="board-row rowStyle">
             {drawSq(0)}
@@ -362,9 +362,9 @@ const Game225 = () => {
                   <span class="fast-flicker">EASY</span>
                 </button>
             </Link>
-            <Link to="/5by5">
+            <Link to="/20by20">
                 <button className="noflicker">
-                  <span class="fast-flicker">MEDIUM</span>
+                  <span class="fast-flicker">HARD</span>
                 </button>
             </Link>
 </div>
