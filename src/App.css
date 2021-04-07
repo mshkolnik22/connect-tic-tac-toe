@@ -110,12 +110,19 @@ body {
   text-shadow: 0 0 15px #3c98fa;
 }
 
+button {
+  font-size: 100%;
+  font-family: inherit;
+  color: blue;
+  text-align: center;
+  border: 1px;
+  margin: 1px;
+}
 
 .squareStyle400 {
   width:20px;
   height:20px;
   background-Color: #d2e4f7;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,11 +166,16 @@ body {
   background-color: #fac2ed;
   background-image: linear-gradient(90deg, violet 0%, #f7a9e6 35%, #f7e4f3 100%);
   width: 608px;
-  height: 508px;
+  height: 608px;
   align-items: center;
+  margin: 2px 40px 2px 1em;
   justify-content: space-around;
   flex-direction: column;
   border: 3px violet solid;
+}
+
+.padded {
+  margin: 2px 40px 2px 1em;
 }
 
 .boardStyle25 {
@@ -181,9 +193,10 @@ body {
 .boardStyle400 {
   display: flex;
   background-color: #c2faed;
+  margin-left: 10px;
   background-image: linear-gradient(90deg, #ed42f6 0%, #fefefe 35%, #93e8f7 100%);
   width: 708px;
-  height: 708px;
+  height: 716px;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
@@ -197,10 +210,10 @@ body {
 }
 
 .instructionsStyle {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
   font-weight: bold;
-  font-Size: 16px;
+  font-Size: 18px;
 }
 
 
@@ -249,7 +262,7 @@ body {
     margin: 10px auto;
     text-align: center;
     color: #bd00bd;
-    font-size: 3em;
+    font-size: 2em;
     transition: 0.5s;
     font-family: Arial, Helvetica, sans-serif;
     overflow-wrap: break-word;
@@ -259,7 +272,7 @@ h1 {
   margin: 10px auto;
   text-align: center;
   color: rgb(0, 145, 255);
-  font-size: 3em;
+  font-size: 2em;
   transition: 0.5s;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -275,6 +288,7 @@ h1:hover {
 }
 
 h2 {
+  margin: 10px;
   color:#00a6ff;
   padding: 30 10px 5px 5px;
   font-family: 'Raleway', sans-serif;
@@ -284,13 +298,28 @@ h2 {
 }
 
 h3 {
+  margin: 10px;
   color:#00a6ff;
   padding: 30 10px 5px 5px;
   font-family: 'Raleway', sans-serif;
   font-size:10px;
   letter-spacing:10px;
- 
 }
+
+h4 {
+  margin: 10px;
+  color:#ff00ee;
+  font-family: 'Raleway', sans-serif;
+  font-size:18px;
+  letter-spacing:10px;
+}
+
+h5 {
+  color:black;
+  font-family: 'Raleway', sans-serif;
+  font-size:11px;
+}
+
 #offset {
   animation: letter-flicker 2s linear infinite;
 }

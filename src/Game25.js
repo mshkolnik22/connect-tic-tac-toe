@@ -78,10 +78,10 @@ const Game25 = () => {
 
     const findNextPlayer = (input) => {
       let nextPlayer
-      if (input === 'X') {
+      if (input === 'O') {
         nextPlayer = 'X'
       } else {
-        nextPlayer = 'X'
+        nextPlayer = 'O'
       }
       return nextPlayer
     }
@@ -91,8 +91,9 @@ const Game25 = () => {
         <div className="containerStyle gameBoard">
           
         <div className="boardStyle25">
-        <div className="pink">
-             <h1>Welcome to 5x5 Tic-Tac-Toe!</h1>
+        <div className="pink padded">
+             <h1>Medium Level</h1>
+             <h1>Connect 5 to win!</h1>
         </div>
           <div className="instructionsStyle">Next player: {findNextPlayer(input)}</div>
           <div className="instructionsStyle">Winner: {winner} </div>
@@ -136,12 +137,12 @@ const Game25 = () => {
              <button className="flicker" onClick={() => handleReset()}><h2>R<span id="offset">E</span>SET</h2></button>
              <Link to="/">
                 <button className="noflicker">
-                  <span class="fast-flicker">HOME</span>
+                  <span class="fast-flicker">EASY</span>
                 </button>
             </Link>
             <Link to="/20by20">
                 <button className="noflicker">
-                  <span class="fast-flicker">5-IN-A-ROW</span>
+                  <span class="fast-flicker">HARD</span>
                 </button>
             </Link>
         </div>     

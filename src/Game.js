@@ -17,7 +17,7 @@ const Game = () => {
       const [winner, setWinner] = useState('None')
       const [input, setInput] = useState('')
 
-    const drawSq = n => {
+    const drawSq = (n) => {
       return (
         <Square 
         // we are looking for that single element of the array
@@ -91,8 +91,9 @@ const Game = () => {
         <div className="containerStyle gameBoard">
           
         <div className="boardStyle">
-        <div>
+        <div className="padded">
              <h1>Welcome to Tic-Tac-Toe!</h1>
+             <h5>Try out our MEDIUM and HARD levels! A traditional Japanese board game for 2 players that is similar to but more complex than tic-tac-toe is called Gomoku. During the game, players take turns placing X's and O's (or black and white pieces) on the board with the goal of creating an unbroken line of 5 pieces in any direction. A traditional Gomoku board has a 15x15 grid of lines, but is sometimes played on a Go board, which has a 19x19 grid.</h5>
         </div>
           <div className="instructionsStyle">Next player: {findNextPlayer(input)}</div>
           <div className="instructionsStyle">Winner: {winner} </div>
@@ -116,12 +117,12 @@ const Game = () => {
              <button className="flicker" onClick={() => handleReset()}><h2>R<span id="offset">E</span>SET</h2></button>
              <Link to="/5by5">
                 <button className="noflicker">
-                  <span class="fast-flicker">EASY 5x5</span>
+                  <span class="fast-flicker">MEDIUM</span>
                 </button>
             </Link>
             <Link to="/20by20">
                 <button className="noflicker">
-                  <span class="fast-flicker">5-IN-A-ROW</span>
+                  <span class="fast-flicker">HARD</span>
                 </button>
             </Link>
         </div>

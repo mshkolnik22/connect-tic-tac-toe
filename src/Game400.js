@@ -6,7 +6,7 @@ const Game400 = () => {
   function Square({ input, onClick }) {
     return (
       <button 
-        className="squareStyle400"
+        className="squareStyle400 smallButton"
         onClick={onClick}>
           {input}
       </button>
@@ -78,10 +78,10 @@ const Game400 = () => {
 
     const findNextPlayer = (input) => {
       let nextPlayer
-      if (input === 'X') {
+      if (input === 'O') {
         nextPlayer = 'X'
       } else {
-        nextPlayer = 'X'
+        nextPlayer = 'O'
       }
       return nextPlayer
     }
@@ -91,12 +91,12 @@ const Game400 = () => {
         <div className="containerStyle gameBoard">
           
         <div className="boardStyle400">
-        <div className="pink">
-             <h1>Welcome to 5 in a row</h1>
-             <h1>Tic-Tac-Toe!</h1>
+        <div className="pink padded">
+             <h1>Welcome to 5 in a row!</h1>
+             <h1>20 by 20 - HARD LEVEL</h1>
         </div>
           <div className="instructionsStyle">Next player: {findNextPlayer(input)}</div>
-          <div className="instructionsStyle">Winner: {winner} </div>
+          <div className="instructionsStyle"><h4>Winner: {winner} </h4></div>
           
             <div className="board-row rowStyle">
             {drawSq(0)}
@@ -542,12 +542,12 @@ const Game400 = () => {
              <button className="flicker" onClick={() => handleReset()}><h2>R<span id="offset">E</span>SET</h2></button>
              <Link to="/">
                 <button className="noflicker">
-                  <span class="fast-flicker">HOME</span>
+                  <span class="fast-flicker">EASY</span>
                 </button>
             </Link>
             <Link to="/5by5">
                 <button className="noflicker">
-                  <span class="fast-flicker">EASY 5x5</span>
+                  <span class="fast-flicker">MEDIUM</span>
                 </button>
             </Link>
         </div>     
