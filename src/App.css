@@ -111,14 +111,14 @@ body {
 }
 
 .squareStyle225 {
-  width:20px;
-  height:20px;
+  width:26px;
+  height:26px;
   background-Color: #d2e4f7;
-  margin: 2px;
+  margin: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-Size: 16px;
+  font-Size: 20px;
   color: black;
   transition: .5s;
 }
@@ -245,11 +245,11 @@ button:hover {
   margin-left: 10px;
   background-image: linear-gradient(90deg, #caf5ff 0%, #7caffc 35%, #e39bff 100%);
   width: 708px;
-  height: 708px;
+  height: 716px;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  border: 3px rgb(145, 0, 116) solid;
+  border: 3px rgb(169, 0, 254) solid;
 }
 
 .boardStyle400 {
