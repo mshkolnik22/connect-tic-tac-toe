@@ -92,9 +92,9 @@ const Game225 = () => {
           
         <div className="boardStyle225">
         <div className="white padded">
-             <h1>Welcome to Gomoku!</h1>
-             <h1>Tic-Tac-Toe 5 In A Row!</h1>
-             <h1>15 by 15 - MEDIUM LEVEL</h1>
+        <h1>Welcome to Tic-Tac-Toe!</h1>
+             <h1>MEDIUM LEVEL</h1>
+             <h5>Try out our <a href="/">EASY</a> and <a href="/20by20">HARD</a> levels! A traditional Gomoku board has a 15x15 grid of lines, but is sometimes played on a Go board, which has a 19x19 grid. <a href="https://mathworld.wolfram.com/Gomoku.html">Learn more about Gomoku</a></h5>
         </div>
           <div className="instructionsStyle">6 In A Row Loses. Next player: {findNextPlayer(input)}</div>
           <div className="instructionsStyle purple"><h4>The Winner is: {winner} </h4></div>

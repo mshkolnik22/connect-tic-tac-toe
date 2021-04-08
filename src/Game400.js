@@ -92,8 +92,9 @@ const Game400 = () => {
           
         <div className="boardStyle400">
         <div className="pink padded">
-             <h1>Welcome to 5 in a row!</h1>
-             <h1>20 by 20 - HARD LEVEL</h1>
+        <h1>Welcome to Tic-Tac-Toe!</h1>
+             <h1>HARD LEVEL</h1>
+             <h5>Try out our <a href="/">EASY</a> and <a href="/15by15">MEDIUM</a> levels! This is a 20x20 grid.</h5>
         </div>
           <div className="instructionsStyle">Next player: {findNextPlayer(input)}</div>
           <div className="instructionsStyle"><h4>Winner: {winner} </h4></div>
